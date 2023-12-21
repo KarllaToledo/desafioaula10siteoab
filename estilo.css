@@ -43,14 +43,36 @@
 .header_nav a:hover{
 background-color: color-mix(in srgb,var(--cor-site),#595551 20%);
 }
+.imagem{
+    width: 8.5em;
+}
+article .imagem:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+article .imagem{
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
 footer{
     text-align: center; 
-    background-color: grey;
-    padding: 10px;
+    background-color: rgb(172, 172, 172);
+    padding: 0.5em;
     font-style: italic;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
+}
+
+.fonte{
+    font-family: 'Sevillana' cursive;
+    text-align: center;
+    color:rgb(101, 98, 95) ;
+    font-size: 1.3em;
+ 
 }
 
 #btn_trailer {
