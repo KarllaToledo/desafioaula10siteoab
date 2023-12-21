@@ -29,16 +29,50 @@
 .trailer_paragrafo{
     font-size: 1.1em;
 }
+/* Estilos para centralizar o vídeo */
+.trailer_video {
+    text-align: center;
+}
+
+.video_container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 para o vídeo */
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.video_container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para o botão */
+.trailer_botao {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor-site);
+    color: #595551;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
 
 .trailer_botao{
-    display: inline-block;
+   
     margin-top: 1em;
     padding:1em 2em;
     background-color: var(--cor-site);
     border-radius: 5px;
     text-decoration: none;
-    color: #595551;
-    text-transform: uppercase;
+    ;
+    
 }
 .trailer_botao:hover{
 
