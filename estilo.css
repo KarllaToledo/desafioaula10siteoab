@@ -22,6 +22,38 @@
 .header_nav{
     background-color: var(--cor-site);
 }
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.trailer_paragrafo{
+    font-size: 1.1em;
+}
+
+.trailer_botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding:1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 5px;
+    text-decoration: none;
+    color: #595551;
+    text-transform: uppercase;
+}
+.trailer_botao:hover{
+
+}
+
+.trailler_botao_article{
+    display: inline-block;
+    margin-top: 3em;
+    padding:1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 5px;
+    text-decoration: none;
+    color: #595551;
+    text-transform: uppercase;
+}
 .ul{
     margin:0;
 
@@ -44,7 +76,15 @@
 background-color: color-mix(in srgb,var(--cor-site),#595551 20%);
 }
 .imagem{
-    width: 8.5em;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
 }
 article .imagem:hover{
     transform: scale(1.1);
