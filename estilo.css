@@ -1,23 +1,24 @@
 :root {
---cor-site:#bfb3a4;
-    
+--cor-site:#A6A1A1;
 }
-.html{
+html{
     font-family: sans-serif;
 }
-
+body{
+    background-color:#c9c9c3;
+}
 .maxWidth{
     max-width: 90em; /*1440px/ 16=90em*/
 }
-.header{
+header{
     text-align: center;
     margin: auto;
-
 }
 .header_logo{
-    width: 5.9em;
-    height:100%;
-    margin: 1em;
+    width: 100px; /* Define o tamanho do logotipo */
+    height: 100px; /* Mantém a mesma altura e largura para criar um círculo */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao redor do logotipo */
 }
 .header_nav{
     background-color: var(--cor-site);
@@ -28,6 +29,10 @@
 }
 .trailer_paragrafo{
     font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    color: #595551;
+
 }
 /* Estilos para centralizar o vídeo */
 .trailer_video {
@@ -37,7 +42,7 @@
 .video_container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Proporção 16:9 para o vídeo */
+    padding-bottom: 33.33%; /* Proporção 4:3 para o vídeo */
     margin-bottom: 20px;
     overflow: hidden;
 }
@@ -63,21 +68,16 @@
     border-radius: 5px;
     text-transform: uppercase;
 }
-
 .trailer_botao{
-   
     margin-top: 1em;
     padding:1em 2em;
     background-color: var(--cor-site);
     border-radius: 5px;
-    text-decoration: none;
-    ;
-    
+    text-decoration: none;    
 }
 .trailer_botao:hover{
-
+    background-color: color-mix(in srgb,var(--cor-site),#595551 20%);
 }
-
 .trailler_botao_article{
     display: inline-block;
     margin-top: 3em;
@@ -88,11 +88,24 @@
     color: #595551;
     text-transform: uppercase;
 }
-.ul{
-    margin:0;
-
+.trailler_botao_article:hover{
+    background-color: color-mix(in srgb,var(--cor-site),#595551 20%);
+}
+.conteudo_centralizado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+/* Estilos para as imagens e botões dentro do conteúdo centralizado */
+.conteudo_centralizado .col {
+    margin: 50px; /* Ajusta conforme necessário */
+}
+.ul{
+    margin:0;
+}
 .header_nav ul{
     list-style-type: none;
     padding:0;
@@ -107,17 +120,16 @@
     padding: 1em;
 }
 .header_nav a:hover{
+
 background-color: color-mix(in srgb,var(--cor-site),#595551 20%);
 }
 .imagem{
-    width: 30%;
-    height: auto;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
+        width: 150px; /* Largura da imagem */
+        height: 150px; /* Altura da imagem (mesmo valor para manter a forma redonda) */
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        overflow: hidden;
 
 }
 article .imagem:hover{
@@ -136,35 +148,22 @@ article .imagem{
 }
 footer{
     text-align: center; 
-    background-color: rgb(172, 172, 172);
+    background-color: #D9D2D3;
     padding: 0.5em;
     font-style: italic;
+    text-decoration-color: black;
 }
 
 .fonte{
     font-family: 'Sevillana' cursive;
     text-align: center;
     color:rgb(101, 98, 95) ;
-    font-size: 1.3em;
- 
+    font-size: 1.1em;
 }
-
-#btn_trailer {
-    display: none;
-    background-color: purple;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#trailer_video{
+.trailer_video{
     width: 600px;
     height: 400px;
 }
-
 @media screen and (max-width: 768px) 
 {
     .header {
@@ -173,19 +172,15 @@ footer{
     .header_nav {
         margin-left: 4rem;
     }
-    #trailer_video{
+    .trailer_video{
         display: none;
         width:300px;
         height: 200px;
     }
-    #btn_trailer{
-        display: inline-block;
-    }
-  }
+}
 
 @media screen and (min-width:48em){
     .col-6{
         width: calc(50% - 2rem);
     }
- 
 }
